@@ -17996,6 +17996,14 @@ Source: &lt;a href="https://robu.in/wp-content/uploads/2020/02/1912111437_HI-LIN
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="R21" library="resistor" deviceset="R-EU_" device="R0805" value="4K7"/>
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="R22" library="resistor" deviceset="R-EU_" device="R0805" value="10K"/>
+<part name="GND18" library="supply1" deviceset="GND" device=""/>
+<part name="R23" library="resistor" deviceset="R-EU_" device="R0805" value="10K"/>
+<part name="GND19" library="supply1" deviceset="GND" device=""/>
+<part name="R24" library="resistor" deviceset="R-EU_" device="R0805" value="10K"/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="R25" library="resistor" deviceset="R-EU_" device="R0805" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -18043,6 +18051,7 @@ Source: &lt;a href="https://robu.in/wp-content/uploads/2020/02/1912111437_HI-LIN
 <text x="137.16" y="-50.165" size="1.778" layer="97">AKA Hackitt And Bodgitt Developments</text>
 <text x="137.16" y="-46.355" size="1.778" layer="97">(c) 2015 Aidan Ruff &amp; Peter Scargill</text>
 <text x="137.16" y="-53.34" size="1.778" layer="97">(aidan@ruffs.org - pete@scargill.net)</text>
+<text x="31.75" y="215.265" size="1.778" layer="91">IRLML0040TRPBF</text>
 </plain>
 <instances>
 <instance part="P+1" gate="VCC" x="219.075" y="153.67" smashed="yes">
@@ -18488,6 +18497,34 @@ Source: &lt;a href="https://robu.in/wp-content/uploads/2020/02/1912111437_HI-LIN
 <instance part="+3V19" gate="G$1" x="-62.23" y="-10.795" smashed="yes">
 <attribute name="VALUE" x="-59.69" y="-8.255" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="GND17" gate="1" x="26.67" y="145.415" smashed="yes">
+<attribute name="VALUE" x="24.13" y="142.875" size="1.778" layer="96"/>
+</instance>
+<instance part="R22" gate="G$1" x="25.4" y="156.21" smashed="yes" rot="R270">
+<attribute name="NAME" x="26.8986" y="160.02" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="22.098" y="160.02" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND18" gate="1" x="-20.955" y="155.575" smashed="yes">
+<attribute name="VALUE" x="-23.495" y="153.035" size="1.778" layer="96"/>
+</instance>
+<instance part="R23" gate="G$1" x="-20.955" y="175.895" smashed="yes" rot="R270">
+<attribute name="NAME" x="-19.4564" y="179.705" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-24.257" y="179.705" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND19" gate="1" x="-31.115" y="155.575" smashed="yes">
+<attribute name="VALUE" x="-33.655" y="153.035" size="1.778" layer="96"/>
+</instance>
+<instance part="R24" gate="G$1" x="-31.115" y="175.895" smashed="yes" rot="R270">
+<attribute name="NAME" x="-29.6164" y="179.705" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-34.417" y="179.705" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND20" gate="1" x="-41.91" y="155.575" smashed="yes">
+<attribute name="VALUE" x="-44.45" y="153.035" size="1.778" layer="96"/>
+</instance>
+<instance part="R25" gate="G$1" x="-41.91" y="175.895" smashed="yes" rot="R270">
+<attribute name="NAME" x="-40.4114" y="179.705" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-45.212" y="179.705" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -18688,6 +18725,27 @@ Source: &lt;a href="https://robu.in/wp-content/uploads/2020/02/1912111437_HI-LIN
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="310.7436" y1="144.2974" x2="310.7436" y2="135.89" width="0.1524" layer="91"/>
 <wire x1="310.7436" y1="135.89" x2="310.515" y2="135.89" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="25.4" y1="151.13" x2="26.67" y2="150.495" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="150.495" x2="26.67" y2="147.955" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="-20.955" y1="170.815" x2="-20.955" y2="158.115" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="-31.115" y1="170.815" x2="-31.115" y2="158.115" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="-41.91" y1="170.815" x2="-41.91" y2="158.115" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="1">
@@ -19307,21 +19365,37 @@ Source: &lt;a href="https://robu.in/wp-content/uploads/2020/02/1912111437_HI-LIN
 <segment>
 <pinref part="Q5" gate="G$1" pin="G"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="163.195" x2="29.21" y2="163.195" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="163.195" x2="25.4" y2="163.195" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="163.195" x2="29.21" y2="163.195" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="161.29" x2="25.4" y2="163.195" width="0.1524" layer="91"/>
+<junction x="25.4" y="163.195"/>
 </segment>
 </net>
 <net name="N$112" class="0">
 <segment>
 <pinref part="Q4" gate="G$1" pin="G"/>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="176.53" x2="29.21" y2="176.53" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="176.53" x2="22.225" y2="176.53" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="22.225" y1="176.53" x2="29.21" y2="176.53" width="0.1524" layer="91"/>
+<wire x1="-20.955" y1="180.975" x2="-20.955" y2="203.835" width="0.1524" layer="91"/>
+<wire x1="-20.955" y1="203.835" x2="22.225" y2="203.835" width="0.1524" layer="91"/>
+<wire x1="22.225" y1="203.835" x2="22.225" y2="176.53" width="0.1524" layer="91"/>
+<junction x="22.225" y="176.53"/>
 </segment>
 </net>
 <net name="N$113" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="G"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="189.23" x2="29.21" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="189.23" x2="25.4" y2="189.23" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="189.23" x2="29.21" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="-31.115" y1="180.975" x2="-31.115" y2="207.645" width="0.1524" layer="91"/>
+<wire x1="-31.115" y1="207.645" x2="25.4" y2="207.645" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="207.645" x2="25.4" y2="189.23" width="0.1524" layer="91"/>
+<junction x="25.4" y="189.23"/>
 </segment>
 </net>
 <net name="N$115" class="0">
@@ -19359,9 +19433,15 @@ Source: &lt;a href="https://robu.in/wp-content/uploads/2020/02/1912111437_HI-LIN
 </net>
 <net name="N$118" class="0">
 <segment>
-<wire x1="20.32" y1="201.93" x2="29.21" y2="201.93" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="201.93" x2="27.94" y2="201.93" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="Q6" gate="G$1" pin="G"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="201.93" x2="29.21" y2="201.93" width="0.1524" layer="91"/>
+<wire x1="-41.91" y1="180.975" x2="-41.91" y2="212.09" width="0.1524" layer="91"/>
+<wire x1="-41.91" y1="212.09" x2="27.94" y2="212.09" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="212.09" x2="27.94" y2="201.93" width="0.1524" layer="91"/>
+<junction x="27.94" y="201.93"/>
 </segment>
 </net>
 <net name="N$12" class="0">
