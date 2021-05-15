@@ -1,5 +1,11 @@
 # ESP8266-RGBW-S-R
 
+**ESP8266**-based **RGBW** controller with **S**ensor and **R**elay support.
+
+This harware design (PCB) is based on the [ESP-GO project and Hackitt & Bodgitt](https://www.smarthometimes.com/1015/home-control-2019-and-esp-go/) board created by Pete Scargill and Aidan Ruff.
+
+## License
+
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 This work is licensed under a
