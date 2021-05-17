@@ -25,15 +25,13 @@ Use **PSU-C** LM2596-based buck convertor. Set output to 5V and use onboard LM11
 
 In version **0.7** I was trying to use pull-down resistors for PWM output pins, but it turned out that ESP can not start if TX (GPIO1) pin is pulled low during the boot. So please just **remove R25** (don't solder it). PWM works fine without it (and probably without R22-R24 too :) ), and it was not in the original version.
 
-I did not use R8 (remove) either because it seems it duplicated by R11.
+I did not use R8 (remove) either because it seems it is duplicated by R11.
 
 Apparently, GPIO4 and GPIO5 are misplaced on the schematic (correct on the PCB footprint).
 
 ## Soldering
 
 ### Basic
-
-## Basic
 
 #### SMD
 * LK2 - just short it if you use LED strip and use input power for them.
@@ -59,7 +57,7 @@ If using non 3.3V input and need on-board linear converter:
 
 Short JP4 **only if you have 3.3V input** already and do not need any extra converters. Input 5V line will be directly connected with internal 3.3V line.
 
-#### TTH
+#### THT
 * C1 (not nessecery with a good DC-DC converter with capacitor on-board)
 * LED2 (status)
 * X1 (for PWM RGBW) 
@@ -90,6 +88,7 @@ Have not tested. Solder according to schematic.
 ## Programming
 I did not use ATtiny85. To switch ESP to programming mode short pins **2** (PROG) and **6** (GND) on **JP3**.
 
+![prog.png](images\static\prog.png)
 ## License
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
