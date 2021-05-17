@@ -88,7 +88,7 @@ Have not tested. Solder according to schematic.
 ## Programming
 I did not use ATtiny85. To switch ESP to programming mode short pins **2** (PROG) and **6** (GND) on **JP3**.
 
-![prog.png](images\static\prog.png)
+![prog.png](images/static/prog.png)
 ## License
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
