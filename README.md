@@ -7,6 +7,7 @@ View this project on [CADLAB.io](https://cadlab.io/project/24310).
 This harware design (PCB) is based on the [ESP-GO project and Hackitt & Bodgitt board](https://tech.scargill.net/home-control-2018/) created by [Pete Scargill](https://tech.scargill.net/) and [Aidan Ruff](https://www.scargill.net/cv/).
 
 ## PCB
+96x55 mm.
 ### Render
 ![render-front.png](images/render-front.png)
 
